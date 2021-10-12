@@ -18,7 +18,7 @@ Integer::Integer(int n){
 
 
 int Integer::get(){
-	return val
+	return val;
 	}
  
 void Integer::set(int n){
