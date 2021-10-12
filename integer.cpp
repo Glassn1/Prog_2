@@ -17,22 +17,17 @@ Integer::Integer(int n){
 	val = n;
 	}
 
-int Integer::Fib(int n){
-	
-    if (n <= 1) {
-        return n;
-    } else {
-        return Fib(n-1) + Fib(n-2);
-    }
-	
-}
 
 int Integer::get(){
-	return val;
+	return val
 	}
  
 void Integer::set(int n){
-	val = n;
+	if (n <= 1) {
+        return n;
+    } else {
+        val = set(n-1) + set(n-2);
+    }
 	}
 
 

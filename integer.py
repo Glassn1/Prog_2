@@ -8,21 +8,16 @@ class Integer(object):
 		lib.Integer_new.restype = ctypes.c_void_p
 		lib.Integer_get.argtypes = [ctypes.c_void_p]
 		lib.Integer_get.restype = ctypes.c_int
-		lib.Integer_Fib.argtypes = [ctypes.c_void_p]
-		lib.Integer_Fib.restype = ctypes.c_int
 		lib.Integer_set.argtypes = [ctypes.c_void_p,ctypes.c_int]
 		lib.Integer_delete.argtypes = [ctypes.c_void_p]
 		self.obj = lib.Integer_new(val)
-		self.obj2 = lib.Integer_new(n)
+		
 
 	def get(self):
 		return lib.Integer_get(self.obj)
 
 	def set(self, val):
 		lib.Integer_set(self.obj, val)
-
-	def Fib(self, n):
-		return lib.Interger_Fib(self.obj2, n)
         
 	def __del__(self):
 		return lib.Integer_delete(self.obj)
