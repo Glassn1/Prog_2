@@ -3,7 +3,7 @@
 from integer import Integer
 
 def main():
-	f = Integer(4)
+	f = Integer(5)
 	print(f.get())
 	f.set(8)
 	print(f.get())
