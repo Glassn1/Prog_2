@@ -4,16 +4,29 @@
 class Integer{
 	public:
 		Integer(int);
+		int Fib(int n)
 		int get();
 		void set(int);
+		
 	private:
 		int val;
 	};
- 
+
+
 Integer::Integer(int n){
 	val = n;
 	}
- 
+
+int Integer::Fib(int n){
+	
+    if (n <= 1) {
+        return n;
+    } else {
+        return Fib(n-1) + Fib(n-2);
+    }
+	
+}
+
 int Integer::get(){
 	return val;
 	}

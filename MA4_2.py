@@ -3,9 +3,9 @@
 from integer import Integer
 
 def main():
-	f = Integer(5)
+	f = Integer(4)
 	print(f.get())
-	f.set(7)
+	f.set(8)
 	print(f.get())
 
 if __name__ == '__main__':
