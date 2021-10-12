@@ -25,5 +25,5 @@ class Integer(object):
 		return lib.Integer_delete(self.obj)
 
 	def fib(self):
-		return lib.Integer_fin(self.obj)
+		return lib.Integer_fib(self.obj)
 
