@@ -23,7 +23,7 @@ int Integer::fib(){
 	return _fib(n);
 }
 
-int Interger::_fib(int n){
+int Integer::_fib(int n){
 	if (n  <= 1){
 		return n;
 	}else{
