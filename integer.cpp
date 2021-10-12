@@ -16,22 +16,12 @@ Integer::Integer(int n){
 	val = n;
 	}
 
-
 int Integer::get(){
-	return val;
+	return n;
 	}
  
 void Integer::set(int n){
-	int previous = 1;
-    int current = 1;
-    int next = 1;
-    for (int i = 3; i <= val; ++i) 
-    {
-        next = current + previous;
-        previous = current;
-        current = next;
-    }
-    val = next;
+	val = n;
 	}
 
 
