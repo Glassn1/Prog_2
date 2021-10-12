@@ -4,7 +4,6 @@
 class Integer{
 	public:
 		Integer(int);
-		int Fib(int n)
 		int get();
 		void set(int);
 		
