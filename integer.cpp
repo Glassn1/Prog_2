@@ -22,11 +22,16 @@ int Integer::get(){
 	}
  
 void Integer::set(int n){
-	if (n <= 1) {
-        val =+ n;
-    } else {
-        val = set(n-1) + set(n-2);
+	int previous = 1;
+    int current = 1;
+    int next = 1;
+    for (int i = 3; i <= val; ++i) 
+    {
+        next = current + previous;
+        previous = current;
+        current = next;
     }
+    val = next;
 	}
 
 
