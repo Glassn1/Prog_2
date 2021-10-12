@@ -20,7 +20,7 @@ Integer::Integer(int n){
 
 int Integer::fib(){
 	int n = val;
-	return _fib(n)
+	return _fib(n);
 }
 
 int _fib(int n){
