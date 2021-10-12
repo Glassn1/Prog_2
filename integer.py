@@ -3,7 +3,7 @@ import ctypes
 lib = ctypes.cdll.LoadLibrary('./libinteger.so')
 
 class Integer(object):
-	def __init__(self, val, n):
+	def __init__(self, val):
 		lib.Integer_new.argtypes = [ctypes.c_int]
 		lib.Integer_new.restype = ctypes.c_void_p
 		lib.Integer_get.argtypes = [ctypes.c_void_p]
