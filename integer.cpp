@@ -23,7 +23,7 @@ int Integer::get(){
  
 void Integer::set(int n){
 	if (n <= 1) {
-        return n;
+        val =+ n;
     } else {
         val = set(n-1) + set(n-2);
     }
