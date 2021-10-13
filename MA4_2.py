@@ -9,9 +9,9 @@ cpp_time = []
 
 def main():
 	I = Integer(0)
-	nlst = range(30,45)
+	nlst = range(0,20)
 	print(nlst)
-	for i in range(30,45):
+	for i in nlst:
 		I.set(i)
 
 		start = pc()
@@ -24,15 +24,16 @@ def main():
 		end = pc()
 		py_time.append(end - start)
 
-	I.set 
+	I.set(47)
 	start = pc()
 	print("Test 47 cpp: ", I.fib())
 	end = pc()
 	print("Time for 47: ", end - start)
 
-	pyp.plot(nlst, cpp_time, 'b.')
-	pyp.plot(nlst, py_time, 'r.')
-	pyp.show()
+	pyp.plot(nlst, cpp_time, 'b.', nlst, py_time, 'r.')
+	pyp.xlabel('n')
+	pyp.ylabel("Time for fibonacci in sec")
+	pyp.savefig('fib_test.png')
 
 		
 		
