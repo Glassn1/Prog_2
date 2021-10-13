@@ -26,4 +26,7 @@ class Integer(object):
 
 	def fib(self):
 		return lib.Integer_fib(self.obj)
+	
+
+		
 
