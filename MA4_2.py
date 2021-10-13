@@ -24,16 +24,17 @@ def main():
 		end = pc()
 		py_time.append(end - start)
 
-	I.set(47)
+	""" I.set(40)
 	start = pc()
 	print("Test 47 cpp: ", I.fib())
 	end = pc()
-	print("Time for 47: ", end - start)
+	print("Time for 47: ", end - start) """
 
 	pyp.plot(nlst, cpp_time, 'b.', nlst, py_time, 'r.')
 	pyp.xlabel('n')
 	pyp.ylabel("Time for fibonacci in sec")
 	pyp.savefig('fib_test.png')
+	pyp.show()
 
 		
 		
