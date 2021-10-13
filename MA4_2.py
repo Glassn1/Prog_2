@@ -2,7 +2,9 @@
 
 from integer import Integer
 from time import perf_counter as pc
-import matplotlib.pyplot as pyp
+import matplotlib.pyplot
+matplotlib.use('Agg')
+
 
 py_time = []
 cpp_time = []
@@ -30,11 +32,11 @@ def main():
 	end = pc()
 	print("Time for 47: ", end - start) """
 
-	pyp.plot(nlst, cpp_time, 'b.', nlst, py_time, 'r.')
-	pyp.xlabel('n')
-	pyp.ylabel("Time for fibonacci in sec")
-	pyp.savefig('fib_test.png')
-	pyp.show()
+	matplotlib.pyplot.plot(nlst, cpp_time, 'b.', nlst, py_time, 'r.')
+	matplotlib.pyplot.xlabel('n')
+	matplotlib.pyplot.ylabel("Time for fibonacci in sec")
+	matplotlib.pyplot.savefig('fib_test.png')
+	matplotlib.pyplot.show()
 
 		
 		
