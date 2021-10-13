@@ -17,12 +17,12 @@ def main():
 		start = pc()
 		print(I.fib())
 		end = pc()
-		cpp_time =+ [end - start]
+		cpp_time.append(end - start)
 
 		start = pc()
 		print(fib_py(i))
 		end = pc()
-		py_time =+ [end - start]
+		py_time.append(end - start)
 
 	I.set 
 	start = pc()
