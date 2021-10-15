@@ -12,7 +12,7 @@ cpp_time = []
 
 def main():
 	I = Integer(0)
-	nlst = range(0,20)
+	nlst = range(0,45)
 	print(nlst)
 	for i in nlst:
 		I.set(i)
@@ -27,18 +27,17 @@ def main():
 		end = pc()
 		py_time.append(end - start)
 
-	""" I.set(40)
+	I.set(47)
 	start = pc()
 	print("Test 47 cpp: ", I.fib())
 	end = pc()
-	print("Time for 47: ", end - start) """
+	print("Time for n = 47 with cpp: ", end - start) 
 
 	plt.plot(nlst, cpp_time, 'b.', nlst, py_time, 'r.')
-	plt.xlabel('n')
-	plt.ylabel("Time for fibonacci in sec")
-	plt.savefig('fib_test.png')
-	plt.show()
-
+	plt.xlabel('Iterations (n)')
+	plt.ylabel("Time for fibonacci (s)")
+	plt.savefig('fib_py_cpp.png')
+	
 		
 		
 
